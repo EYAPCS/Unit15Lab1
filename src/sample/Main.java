@@ -50,22 +50,26 @@ public class Main extends Application {
         rootNode.setVgap(5);
         rootNode.setPadding(new Insets(30));
 
-        //primaryStage.setScene(new Scene(root, 300, 275));
-//
-//        rootNode.add(new Label("1: "), 0,2);
-//        rootNode.add(oneField, 1,2);
-//
-//        rootNode.add(new Label("2: "), 0,3);
-//        rootNode.add(twoField, 1,3);
-//
-//
-//        Button calculate = new Button("Calculate");
-//        rootNode.setHalignment(calculate, HPos.RIGHT);
-//        rootNode.add(calculate, 1, 5);
-//
-//        rootNode.add(result, 1, 6);
-//
+//        rootNode.getChildren().add(0,0, new Label("Hi"));
+
+        rootNode.add(new Label("1: "), 0,2);
+        rootNode.add(oneField, 1,2);
+
+        rootNode.add(new Label("2: "), 0,3);
+        rootNode.add(twoField, 1,3);
+
+
+        Button calculate = new Button("Calculate");
+        rootNode.setHalignment(calculate, HPos.RIGHT);
+        rootNode.add(calculate, 1, 5);
+
+        rootNode.add(result, 1, 6);
+
+
+//        Scene scene = new Scene(rootNode, 240, 100);
+        primaryStage.setScene(new Scene(rootNode, 300, 275));
         primaryStage.show();
+
     }
 
 
